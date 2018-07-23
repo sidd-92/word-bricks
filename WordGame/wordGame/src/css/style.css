@@ -1,0 +1,12 @@
+body{
+    padding:10px;
+    margin: 10px;
+}
+
+.light_box{
+    padding: 20px;
+    display:box;
+    width: auto;
+    background-color: lightblue;
+    text-align: center;
+}

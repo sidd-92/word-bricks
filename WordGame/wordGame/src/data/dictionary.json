@@ -1,0 +1,58 @@
+{
+  "cough": {
+    "answer": ["chug", "cog", "cough", "hog", "hug", "ouch", "ugh"],
+    "level": 0
+  },
+  "abroad": {
+    "answer": ["aboard", "abroad", "bard", "board", "orb", "road", "rob"],
+    "level": 0
+  },
+  "absolute": {
+    "answer": [
+      "abet",
+      "able",
+      "ablest",
+      "ablutes",
+      "about",
+      "absolute",
+      "abut"
+    ],
+    "level": 0
+  },
+  "priest": {
+    "answer": ["piers", "sprite", "priest", "tires", "tries", "trip", "terps"],
+    "level": 0
+  },
+  "capital": {
+    "answer": ["cat", "clap", "pact", "capital", "pail", "pita", "plait"],
+    "level": 0
+  },
+  "contained": {
+    "answer": [
+      "adonic",
+      "ancient",
+      "cannot",
+      "contained",
+      "contain",
+      "noticed",
+      "ocean"
+    ],
+    "level": 0
+  },
+  "octane": {
+    "answer": ["canoe", "octane", "taco", "tone", "note", "neat", "enact"],
+    "level": 0
+  },
+  "bandana": {
+    "answer": ["bandana", "bad", "ban", "dab", "band", "banana", "nanna"],
+    "level": 0
+  },
+  "overlook": {
+    "answer": ["lookover", "overlook", "role", "over", "lover", "ore", "roe"],
+    "level": 0
+  },
+  "cucumber": {
+    "answer": ["cucumber", "emu", "rum", "umber", "curb", "cue", "cube"],
+    "level": 0
+  }
+}
