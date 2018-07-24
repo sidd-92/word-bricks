@@ -6,9 +6,8 @@ const welcomeText =
 const nextLevelText = "Want to play the next level ?";
 let count = 0;
 
-let totalNumberOfLevels = 10;
+let totalNumberOfLevels = pickAndSolve.totalNumberOfWords;
 
-//readlinesync.setDefaultOptions({limit: ['yes', 'exit']});
 console.log(welcomeText);
 readlinesync.promptCLLoop({
   yes: function() {
@@ -31,27 +30,3 @@ readlinesync.promptCLLoop({
   
 });
 console.log("Bye");
-
-//let totalNumberLevels = 10;
-/* 
-var rl = readline.createInterface(process.stdin, process.stdout);
-rl.setPrompt(welcomeText);
-rl.prompt();
-
-  rl.once("line", line => {
-    if (line.toLowerCase() == "y") {
-      startLevel();
-      process.stdin.destroy();
-      rl.close();
-    } else if (line.toLowerCase() == "n") {
-      rl.close();
-    }
-  });
-  
-  rl.on("SIGINT", () => {
-    rl.question("Are you sure you want to exit? ", answer => {
-      if (answer.match(/^y(es)?$/i)) rl.pause();
-    });
-  });
-
- */

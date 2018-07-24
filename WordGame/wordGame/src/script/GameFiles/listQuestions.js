@@ -12,6 +12,7 @@ exports.levelInfo = () => {
   for (let q in jsonContent) {
     ques.push(q);
   }
+  let totalQuestions = ques.length;
   let random = Math.floor(Math.random() * ques.length + 0);
   let selectedQuestion = ques[random];
   let level = jsonContent[selectedQuestion]["level"];
@@ -27,5 +28,5 @@ exports.levelInfo = () => {
     answers[arrayAnswer[i]] = arrayAnswer[i];
   }
   //Need to add Level in the object
-  return { selectedQuestion, level, answers, lengthOfAnswers };
+  return { selectedQuestion, answers, lengthOfAnswers,totalQuestions };
 };
