@@ -14,7 +14,7 @@ readlinesync.promptCLLoop({
     count = count + 1;
     if (count != totalNumberOfLevels) {
       startLevel();
-      console.log(nextLevelText,' (yes/no)');
+      console.log(nextLevelText, " (yes/no)");
     } else {
       console.log("Thank You For Completing All Levels: (quit)");
     }
@@ -23,10 +23,9 @@ readlinesync.promptCLLoop({
     console.log("Thank You");
     return true;
   },
-  quit:function(){
+  quit: function() {
     console.log("Thank You");
     process.exit(0);
   }
-  
 });
 console.log("Bye");

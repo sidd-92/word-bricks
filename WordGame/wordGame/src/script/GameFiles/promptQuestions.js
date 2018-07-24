@@ -26,39 +26,34 @@ exports.pickAndSolve = () => {
       console.log("You Already Entered the Word");
     }
     if (tempArray.length == currentWord.lengthOfAnswers) {
-      
       console.log("All Words Complete");
       return true;
     }
   });
-  console.log('Words Completed',completedWords);
-  if(completedWords.length > 0){
-    console.log('Congrats! You Earned ',points*completedWords.length,' points ');
+  console.log("Words Completed", completedWords);
+  if (completedWords.length > 0) {
+    console.log(
+      "Congrats! You Earned ",
+      points * completedWords.length,
+      " points "
+    );
   }
-  
 };
 
 /**
  * @name init
  * @description Initialize all values
  */
-let init = ()=>{
+let init = () => {
   currentWord = newWord.levelInfo();
   //console.log('All Completed Main Words:--->',completedWords);
-  if(completedWords.includes(currentWord.selectedQuestion)){
+  if (completedWords.includes(currentWord.selectedQuestion)) {
     init();
-  }
-  else{
+  } else {
     completedWords.push(currentWord.selectedQuestion);
-    letter = listLetters.splitWord(currentWord.selectedQuestion); 
+    letter = listLetters.splitWord(currentWord.selectedQuestion);
     subWordComplete = {};
     points = 0;
     tempArray = [];
   }
-    
-  
-  
-  
-}
-
-  
+};

@@ -1,6 +1,8 @@
 let fs = require("fs");
 // Get content from dictionary
-let contents = fs.readFileSync("/home/sid/Desktop/Common Files/WordGame/wordGame/src/data/dictionary.json");
+let contents = fs.readFileSync(
+  "/home/sid/Desktop/Common Files/WordGame/wordGame/src/data/dictionary.json"
+);
 // Define to JSON type
 let jsonContent = JSON.parse(contents);
 
@@ -28,5 +30,5 @@ exports.levelInfo = () => {
     answers[arrayAnswer[i]] = arrayAnswer[i];
   }
   //Need to add Level in the object
-  return { selectedQuestion, answers, lengthOfAnswers,totalQuestions };
+  return { selectedQuestion, answers, lengthOfAnswers, totalQuestions };
 };
