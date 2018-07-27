@@ -1,4 +1,6 @@
 # word-unshuffled
+[![asciicast](https://asciinema.org/a/1gE07ClD9AyD3ikLzaL4MFVpp.png)](https://asciinema.org/a/1gE07ClD9AyD3ikLzaL4MFVpp)
+
 This game uses [readline-sync](https://www.npmjs.com/package/readline-sync)
 
 Steps to Play the game
