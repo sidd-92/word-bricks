@@ -1,6 +1,15 @@
 body {
-  padding: 2em;
   text-align: center;
+}
+nav {
+  display: inline-block;
+}
+.pagination {
+  padding: 3px;
+}
+.card-body {
+  padding-top: 10px;
+  margin: 0px;
 }
 
 .pills {
@@ -12,18 +21,16 @@ body {
   align-content: center;
   text-align: center;
   border-radius: 20%;
-  font-size: 1.2rem;
 }
 .main {
-  align-content: center;
   background-color: #d3d3d3;
   display: inline-block;
 }
 
 #container {
-  width: 300px;
+  width: 312px;
   height: 300px;
-  display: inline-block;
+
   margin: 20px;
   perspective: 1200px;
   perspective-origin: 50% 50%;
@@ -37,7 +44,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+
   margin: 4px 2px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
@@ -57,7 +64,6 @@ body {
 }
 
 #center {
-  display: inline-block;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -93,14 +99,14 @@ body {
 }
 
 .field {
-  width: 30px;
-  height: auto;
+  width: 50px;
+  height: 60px;
   position: absolute;
   background-color: #d3d3d3;
   border-style: inset;
   border-radius: 200px 200px 200px 200px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 5px;
 }
 
@@ -114,23 +120,4 @@ body {
 
 .transform-active {
   transform: rotate(360deg);
-}
-
-/*
-Drag and Drop Styles
-*/
-.src  {
-  color: blue;
-  border: 5px solid black;
-  width: 300px;
-  height: 50;
-  margin: 0em;
-    padding: 2em;
-}
-.dest {
-  border: 5px solid blue;
-  width: 300px;
-  height: 50;
-  margin: 0em;
-    padding: 2em;
 }
