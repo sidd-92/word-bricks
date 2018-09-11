@@ -1,0 +1,15 @@
+{
+  "name": "wordgame",
+  "version": "1.0.0",
+  "description": "Word Un-Shuffled Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "words",
+    "game"
+  ],
+  "author": "Sid",
+  "license": "ISC"
+}
