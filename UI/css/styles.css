@@ -1,8 +1,17 @@
 body {
   text-align: center;
+  padding: 5px;
+  background-image: url("https://previews.123rf.com/images/divaler/divaler1202/divaler120200010/12501930-stone-brick-wall-in-gray-scale.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 nav {
   display: inline-block;
+}
+
+#heading {
+  height: 50px;
+  width: auto;
 }
 .pagination {
   padding: 3px;
@@ -41,9 +50,6 @@ nav {
   margin: 4px 2px;
   cursor: pointer;
   outline: 0;
-}
-btn:focus {
-  outline: 0 !important;
 }
 
 #center {
