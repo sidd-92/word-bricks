@@ -1,78 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/styles.css">
 
-function dragstart_handler(ev) {
-    console.log("dragStart");
-    // Change the source element's background color to signify drag has started
-    ev.currentTarget.style.border = "dashed";
-    // Add the id of the drag source element to the drag data payload so
-    // it is available when the drop event is fired
-    ev.dataTransfer.setData("text", ev.target.id);
-    // Tell the browser both copy and move are possible
-    ev.effectAllowed = "copy";
-   }
-   function dragover_handler(ev) {
-    console.log("dragOver");
-    // Change the target element's border to signify a drag over event
-    // has occurred
-    ev.currentTarget.style.background = "lightblue";
-    ev.preventDefault();
-   }
-   function drop_handler(ev) {
-     console.log("Drop");
-     ev.preventDefault();
-     // Get the id of drag source element (that was added to the drag data
-     // payload by the dragstart event handler)
-     var id = ev.dataTransfer.getData("text");
-     // Copy the element if the source and destination ids are both "copy"
-     if (id == "src_copy" && ev.target.id == "dest_copy") {
-      var nodeCopy = document.getElementById(id).cloneNode(true);
-      nodeCopy.id = "newId";
-      ev.target.appendChild(nodeCopy);
-     }
-   }
-   function dragend_handler(ev) {
-     console.log("dragEnd");
-     // Restore source's border
-     ev.target.style.border = "solid black";
-     // Remove all of the drag data
-     ev.dataTransfer.clearData();
-   }
-    </script>
-    <title>The Word Game</title>
+  <title>The Word Game</title>
 </head>
+
 <body>
-<main>
-  <div class="main">
+  <main>
+    <div class="main">
       <div id="container">
-          <div id="center"></div>
-        </div>
-      
-  </div>
-  
-</main>
-<button type="button" id="button" class="shuffle button1" value="Shuffle Letters"><i class="fa fa-3x fa-refresh"></i> Shuffle</button>
-<hr>
-<div draggable="true" class="src" id="src_copy" ondragstart="dragstart_handler(event);" ondragend="dragend_handler(event);">
-  Select this element and drag to the <strong>Copy Drop Zone</strong>.
-</div>
-<div id="dest_copy" class="dest" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"><strong>Copy Drop Zone</strong></div>
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>   
-<script src="./script/wordUnshuffled.js"></script>
+        <div id="center"></div>
+      </div>
+
+    </div>
+
+  </main>
+  <button type="button" id="button" class="shuffle button1" value="Shuffle Letters"><i class="fa fa-3x fa-refresh"></i>
+    Shuffle</button>
+  <hr>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="./script/wordUnshuffled.js"></script>
 
 
-<!-- <script src="./script/displayInCircle.js"></script> -->
+  <!-- <script src="./script/displayInCircle.js"></script> -->
 
 </body>
+
 </html>

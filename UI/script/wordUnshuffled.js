@@ -1,20 +1,20 @@
-//All imports
+// *All imports
 import Trie from "./trie";
 
 import dictionary from "./load";
 import wordProvider from "./wordProvider";
 
-//Needed for the game mechanisms
+// !Needed for the game mechanisms
 let wordList = new Object();
 let wordA = [];
 
 let loadDoc = dictionary.loadDoc;
 let initializeBeforeStart = wordProvider.initializeBeforeStart;
 
-//Initis for Imports
+//!Initis for Imports
 let trie = Trie.Trie;
 
-//Base URL
+//!Base URL
 const url = "https://codepen.io/Sidd92/pen/0abe5f0ad3a8366367426a9f3c51e328.js";
 //const debugUrl = "https://codepen.io/Sidd92/pen/wxRJQZ.js";
 
