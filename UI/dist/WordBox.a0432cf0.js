@@ -106,12 +106,16 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"script/Components/WordBox.js":[function(require,module,exports) {
 var elem = React.createElement;
 function AnswerBox(props) {
+  var list = props.name.map(function (n) {
+    return elem("li", { key: n, className: "page-item disabled" }, elem("a", { className: "page-link" }, n));
+  });
+  return elem("ul", { className: "pagination" }, list);
   var nav = elem("nav", { "aria-label": "..." }, elem("ul", { className: "pagination" }, elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "1")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "2")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "3")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "3"))), elem("ul", { className: "pagination" }, elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "1")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "2")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "3"))), elem("ul", { className: "pagination" }, elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "1")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "2")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "3")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "3"))), elem("ul", { className: "pagination" }, elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "1")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "2")), elem("li", { className: "page-item disabled" }, elem("a", { className: "page-link" }, "3"))));
-  return elem("p", null, props.name);
 }
-
-//const twonav = elem("div", null, nav, nav, nav);
-ReactDOM.render(elem(AnswerBox, { name: "NAVBAR" }), document.getElementById("answerBox"));
+var names = ["A", "B", "C"];
+var twonav = elem("nav", { "aria-label": "..." }, elem(AnswerBox, { name: names }), elem(AnswerBox, { name: names }));
+var fournav = elem("div", null, twonav, twonav);
+ReactDOM.render(fournav, document.getElementById("answerBox"));
 },{}],"../../../../../../usr/local/share/.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -141,7 +145,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '39859' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '44555' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

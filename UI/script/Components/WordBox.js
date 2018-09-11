@@ -1,5 +1,13 @@
 let elem = React.createElement;
 function AnswerBox(props) {
+  let list = props.name.map(n =>
+    elem(
+      "li",
+      { key: n, className: "page-item disabled" },
+      elem("a", { className: "page-link" }, n)
+    )
+  );
+  return elem("ul", { className: "pagination" }, list);
   const nav = elem(
     "nav",
     { "aria-label": "..." },
@@ -90,11 +98,13 @@ function AnswerBox(props) {
       )
     )
   );
-  return elem("p", null, props.name);
 }
-
-//const twonav = elem("div", null, nav, nav, nav);
-ReactDOM.render(
-  elem(AnswerBox, { name: "NAVBAR" }),
-  document.getElementById("answerBox")
+let names = ["A", "B", "C"];
+const twonav = elem(
+  "nav",
+  { "aria-label": "..." },
+  elem(AnswerBox, { name: names }),
+  elem(AnswerBox, { name: names })
 );
+const fournav = elem("div", null, twonav, twonav);
+ReactDOM.render(fournav, document.getElementById("answerBox"));
