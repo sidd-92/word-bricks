@@ -11,5 +11,8 @@
     "game"
   ],
   "author": "Sid",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.1.3"
+  }
 }
