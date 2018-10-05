@@ -1,4 +1,8 @@
-# word-unshuffled
+# Word-Bricks
+
+![User Interface Of the Game](https://github.com/sidd-92/word-unshuffled/blob/master/UIScreen.PNG)
+
+There is also a CLI Version of this game
 
 [![asciicast](https://asciinema.org/a/1gE07ClD9AyD3ikLzaL4MFVpp.png)](https://asciinema.org/a/1gE07ClD9AyD3ikLzaL4MFVpp)
 
@@ -11,4 +15,4 @@ Steps to Play the game
 3. write node game.js
 4. Play the game
 
-![User Interface Of the Game](https://github.com/sidd-92/word-unshuffled/blob/master/UIScreen.PNG)
+
