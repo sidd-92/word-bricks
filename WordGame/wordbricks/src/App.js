@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import RoundTable from "./Components/RoundTable/RoundTable";
+import WordWall from "./Components/WordWall/WordWall";
+import "./App.css";
 
 class App extends Component {
-  render() {
-    return (
-      <div>
-   <h1>Hello World</h1>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<React.Fragment>
+				<RoundTable />
+				<WordWall />
+			</React.Fragment>
+		);
+	}
 }
 
 export default App;
