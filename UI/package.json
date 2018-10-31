@@ -4,7 +4,8 @@
   "description": "Word Un-Shuffled Game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel WordGame.html"
   },
   "keywords": [
     "words",
@@ -13,6 +14,7 @@
   "author": "Sid",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap": "^4.1.3"
+    "bootstrap": "^4.1.3",
+    "parcel-bundler": "^1.10.3"
   }
 }
